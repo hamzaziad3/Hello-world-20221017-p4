@@ -3,13 +3,16 @@ int appWidth, appHeight;
 //A simple Display Alogirthm, does not use IF=ElseIf-Else
 //
 //Global Variables
-int appWidth, appHeight;
 //
 //Declaring Display Geometry: landscape, square, portrait
-size(600, 700); //Able to deploy with fullScreen();
+size(600, 600
+); //Able to deploy with fullScreen();
 appWidth = width;
 appHeight = height;
 //Concatenation: , or + (i.e space)
+
+size(400, 400);
+rect(120, 80, 220, 220, 28);
 println("\t\t\tWidth="+width, "\tHeight="+height);
 println("Display Monitor:", "\twidth:"+displayWidth, "\theight:"+displayHeight);
 //
