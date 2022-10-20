@@ -1,8 +1,12 @@
 //Global Variables
 int appWidth, appHeight;
+//A simple Display Alogirthm, does not use IF=ElseIf-Else
+//
+//Global Variables
+int appWidth, appHeight;
 //
 //Declaring Display Geometry: landscape, square, portrait
-size(700, 400); //Able to deploy with fullScreen();
+size(600, 700); //Able to deploy with fullScreen();
 appWidth = width;
 appHeight = height;
 //Concatenation: , or + (i.e space)
@@ -18,4 +22,7 @@ if ( appWidth==0 || appHeight==0 ) println("STOP, is broken"); //OR
 if ( appWidth!=0 && appHeight!=0 ) println("Display: Good to Go"); //AND
 //
 String ls="Landscape or Square", p="portrait", DO="Display Orientation", instruct="Bru, turn your phun";
+String orientation = ( appWidth >= appHeight ) ? ls : p ;
+println(DO, orientation);
+if (orientation == p ) println(instruct); //Later, output to CANVAS
 //
